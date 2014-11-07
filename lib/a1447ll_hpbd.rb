@@ -2,7 +2,7 @@ require "a1447ll_hpbd/version"
 require "a1447ll_hpbd/msg"
 
 module A1447llHpbd
-  def self.hpbd n
+  def self.show n
     s = n.upcase.split(%r{\s*})
     name = ""
     for i in 0 .. s.length-2 do
