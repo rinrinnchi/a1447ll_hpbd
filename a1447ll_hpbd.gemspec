@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.name          = "a1447ll_hpbd"
   spec.version       = A1447llHpbd::VERSION
   spec.authors       = ["Le Bao Linh"]
-  spec.email         = ["a1447ll@aiit.ac.jp"]
-  spec.summary       = "A simple happy birthday msg"
+  spec.email         = ['a1447ll@aiit.ac.jp']
+  spec.summary       = "A simple happy birthday message"
   spec.description   = ""
   spec.homepage      = ""
   spec.license       = "MIT"
