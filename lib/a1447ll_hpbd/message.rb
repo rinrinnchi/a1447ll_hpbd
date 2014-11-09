@@ -1,7 +1,7 @@
 class Message
   def initialize name 
     @width = name.length < 31 ? 33 : name.length + 9 - name.length%4
-    @height = 9
+    @height = 11
     @name = name
   end
 
@@ -19,9 +19,12 @@ class Message
                           ("x" + " " * (@width - 2) + "x") 
     end
 
+    time = "[ " + Time.now.strftime("%Y/%m/%d") + " ]"
+
     insert ">>> HAPPY BIRTHDAY! <<<", msg[2]
-    insert @name, msg[4]
-    insert "\\(*^ 3 ^*)/", msg[6]
+    insert time, msg[4]
+    insert @name, msg[6]
+    insert "\\(*^ 3 ^*)/", msg[8]
 
     for i in 0 .. msg.size-1
       puts msg[i]

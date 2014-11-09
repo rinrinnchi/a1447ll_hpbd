@@ -3,7 +3,7 @@ require "a1447ll_hpbd/message"
 
 module A1447llHpbd
   def self.run  
-    print "In put a name: "
+    print "Input the someone's name who has birthday today: "
     n = gets.chomp
     s = n.upcase.split(%r{\s*})
     name = ""
