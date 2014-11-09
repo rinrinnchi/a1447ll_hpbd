@@ -1,15 +1,20 @@
 require "a1447ll_hpbd/version"
-require "a1447ll_hpbd/msg"
+require "a1447ll_hpbd/message"
 
 module A1447llHpbd
-  def self.show n
+  def self.run  
+    print "In put a name: "
+    n = gets.chomp
     s = n.upcase.split(%r{\s*})
     name = ""
     for i in 0 .. s.length-2 do
       name = name + s[i] + "."
     end
     name = ".:" + name + s[-1] + ":."
-    Msg.draw name
-    return "Wish you a happy birthday!" 		
+    msg = Message.new name
+    puts ""
+    msg.draw 
+    puts ""
+    return "Wish you a happy birthday! <3" 		
   end
 end
